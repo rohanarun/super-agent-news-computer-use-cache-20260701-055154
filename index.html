@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Computer-use cache — Reusable computer workflows with Super</title>
+  <meta name="description" content="Learn how Super’s computer-use cache lets personal AI agents reuse browser and desktop action traces so repeated workflows get cheaper and more reliable." />
+  <link rel="canonical" href="https://app.getsupers.com/use-cases/computer-use-cache/" />
+  <meta property="og:title" content="Computer-use cache — Super" />
+  <meta property="og:description" content="Reusable computer workflows for AI agents. Reduce cost and failures on repeated runs with Super’s computer-use cache." />
+  <meta property="og:url" content="https://app.getsupers.com/use-cases/computer-use-cache/" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800,900&display=swap" />
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://app.getsupers.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Use cases",
+        "item": "https://app.getsupers.com/use-cases/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Computer-use cache",
+        "item": "https://app.getsupers.com/use-cases/computer-use-cache/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- FAQPage Schema (matches visible FAQ exactly) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a computer-use cache?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A computer-use cache is a reusable record of how an AI agent interacted with real software — including clicks, form fills, navigation steps, and UI states — so the agent can replay or adapt those actions on future runs instead of starting from scratch."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why do repeated computer-use workflows get expensive without a cache?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Without a cache, an agent must re-perceive screens, re-plan actions, and re-execute every step on each run. This increases compute usage and raises the chance of failure when apps change slightly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Super use a computer-use cache differently?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Super stores successful computer-use action traces and reuses them for similar future tasks. Over time, repeated workflows become faster, more reliable, and cheaper to run because the agent builds on prior executions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this the same as browser automation scripts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Traditional scripts like Selenium or Playwright are brittle and fixed. Super’s computer-use cache is learned from real interactions and can adapt when layouts or flows change slightly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which tools is this useful for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It’s useful for repeated workflows in browsers and desktop apps such as dashboards, CRMs, internal tools, booking systems, and admin panels — anywhere the same computer work happens again and again."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="ambient-grid"></div>
+  <div class="paper-noise"></div>
+
+  <div class="page">
+    <nav class="nav">
+      <div class="brand">
+        <img src="https://storage.googleapis.com/cheatlayer/landing/icon-transparent-512.png" alt="Super" />
+      </div>
+      <div class="nav-links">
+        <a href="https://app.getsupers.com/use-cases/">Use cases</a>
+      </div>
+      <div class="nav-cta">
+        <a class="btn btn-black" href="https://app.getsupers.com/general?login=1&open_login=1">Try Super</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="shell hero-inner">
+        <h1>Computer-use cache for repeated AI workflows</h1>
+        <p class="hero-sub">Super gives personal AI agents a reusable memory layer for real computer work — so repeated browser and desktop automations get cheaper, faster, and more reliable over time.</p>
+        <div class="hero-actions">
+          <a class="btn btn-black" href="https://app.getsupers.com/general?login=1&open_login=1">Start with Super</a>
+          <a class="btn btn-white" href="#workflow">See how it works</a>
+        </div>
+        <div class="media-frame">
+          <video autoplay muted loop playsinline src="https://storage.googleapis.com/cheatlayer/landing/hero-0607-2-3.mp4"></video>
+        </div>
+      </div>
+    </header>
+
+    <section id="workflow" class="chapter">
+      <div class="shell">
+        <h2>How the computer-use cache works</h2>
+        <div class="bento">
+          <div class="bento-item">
+            <h3>1. First run: real computer use</h3>
+            <p>Super’s agent operates a real browser or desktop app — clicking, typing, navigating, and handling authentication with user confirmation where required.</p>
+          </div>
+          <div class="bento-item">
+            <h3>2. Action trace stored</h3>
+            <p>The successful sequence of actions and UI states is saved into a computer-use cache tied to your workflow.</p>
+          </div>
+          <div class="bento-item">
+            <h3>3. Repeat run: reuse and adapt</h3>
+            <p>On future runs, Super reuses the cached actions and adapts them if the interface changes slightly.</p>
+          </div>
+          <div class="bento-item">
+            <h3>4. Compounding reliability</h3>
+            <p>Each successful execution strengthens the cache, reducing failures and wasted compute.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <div class="shell">
+        <h2>Why this matters now</h2>
+        <div class="compare-grid">
+          <div class="compare-card">
+            <h3>Agent accountability</h3>
+            <p>Enterprises increasingly demand traceability and reuse of agent actions, not opaque one-off runs <a href="https://news.google.com/rss/articles/CBMiekFVX3lxTFBQTDdBOEp2cnpNaDJLa2RhT3RJY08zXzhwM1ZpVDgyOE5lMGhNc3UtcEhfMS1vRHFSVGpFdVlXSVF1STd1aGx6VXdSTTN4N3FWa2wzZVBUZGpJRWFDUjl2VEdFVzJ0YTJjX0V0WnZYYTFGOEp5TFBPN0VR?oc=5">(Tech Wire Asia)</a>.</p>
+          </div>
+          <div class="compare-card">
+            <h3>Workflow orchestration</h3>
+            <p>Agentic tools are converging on repeated, durable workflows rather than single prompts <a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE9TR0dCckYxUDF2Ym9KZ3RNS3dDVUg5WGFHOEt5YjVLYmZucXBZNkxHUVpCbmQ3MHEwWWRKUlFsdmp4OUxicURxR0lWQzdhQUswUEY5UDhnTWtMTWFSdnRIbU9R?oc=5">(AIMultiple)</a>.</p>
+          </div>
+          <div class="compare-card">
+            <h3>Caching is evolving</h3>
+            <p>The industry is rethinking cache layers for AI-era workloads, including action reuse <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBvSVVxcGlNanU2QlZMaWNNc2pVU0FNczJLYzhWWktPdkFOWUJJNW1DYmNramtxWkx5emRET1owUThjQ1E1RGl2U2tuTFRoOGhpOGlZUVhkT1RnUWxncWEtcEhDVTJ2UQ?oc=5">(Cloudflare)</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <div class="shell">
+        <h2>Super in the broader landscape</h2>
+        <div class="compare-grid">
+          <div class="compare-card"><strong>ChatGPT</strong> — Excellent conversational AI, evolving toward agents, but not optimized for reusable computer-use cache workflows.</div>
+          <div class="compare-card"><strong>Gemini</strong> — Strong browser-native capabilities and orchestration focus.</div>
+          <div class="compare-card"><strong>Grok</strong> — Opinionated assistant with real-time context.</div>
+          <div class="compare-card"><strong>Siri</strong> — Voice-first assistant embedded in Apple ecosystems.</div>
+          <div class="compare-card"><strong>Folk</strong> — Niche automation tooling within the agent market.</div>
+          <div class="compare-card"><strong>Orchids</strong> — Experimental approaches to agents and automation.</div>
+          <div class="compare-card highlight"><strong>Super</strong> — Personal AI agents built around durable computer-use workflows and a reusable computer-use cache.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter faq">
+      <div class="shell">
+        <h2>Frequently asked questions</h2>
+        <div class="qa">
+          <h3>What is a computer-use cache?</h3>
+          <p>A computer-use cache is a reusable record of how an AI agent interacted with real software — including clicks, form fills, navigation steps, and UI states — so the agent can replay or adapt those actions on future runs instead of starting from scratch.</p>
+        </div>
+        <div class="qa">
+          <h3>Why do repeated computer-use workflows get expensive without a cache?</h3>
+          <p>Without a cache, an agent must re-perceive screens, re-plan actions, and re-execute every step on each run. This increases compute usage and raises the chance of failure when apps change slightly.</p>
+        </div>
+        <div class="qa">
+          <h3>How does Super use a computer-use cache differently?</h3>
+          <p>Super stores successful computer-use action traces and reuses them for similar future tasks. Over time, repeated workflows become faster, more reliable, and cheaper to run because the agent builds on prior executions.</p>
+        </div>
+        <div class="qa">
+          <h3>Is this the same as browser automation scripts?</h3>
+          <p>No. Traditional scripts like Selenium or Playwright are brittle and fixed. Super’s computer-use cache is learned from real interactions and can adapt when layouts or flows change slightly.</p>
+        </div>
+        <div class="qa">
+          <h3>Which tools is this useful for?</h3>
+          <p>It’s useful for repeated workflows in browsers and desktop apps such as dashboards, CRMs, internal tools, booking systems, and admin panels — anywhere the same computer work happens again and again.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <div class="shell">
+        <h2>Explore related use cases</h2>
+        <ul class="cluster-links">
+          <li><a href="https://app.getsupers.com/use-cases/order-food-with-ai/">Order food with AI</a></li>
+          <li><a href="https://app.getsupers.com/use-cases/book-rides-with-ai/">Book rides with AI</a></li>
+          <li><a href="https://app.getsupers.com/use-cases/text-message-ai-assistant/">Text message AI assistant</a></li>
+          <li><a href="https://app.getsupers.com/use-cases/meta-display-ai-assistant/">Meta Display AI assistant</a></li>
+          <li><a href="https://app.getsupers.com/use-cases/ai-agent-build-websites/">AI agent to build websites</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="shell">
+        <h2>Build durable computer workflows</h2>
+        <p>Use Super when your AI agent needs to do the same real computer work again and again.</p>
+        <a class="btn btn-black" href="https://app.getsupers.com/general?login=1&open_login=1">Get started</a>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
